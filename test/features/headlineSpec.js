@@ -21,7 +21,7 @@ describe('index page', function () {
     });
 
     it('should have a title', function () {
-        expect(this.browser.text('h1')).to.equal('Headline News');
+        expect(this.browser.text('a.navbar-brand')).to.equal('Headline News');
     });
 
     after(function (done) {
