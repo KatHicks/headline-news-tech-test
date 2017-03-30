@@ -24,6 +24,14 @@ describe('index page', function () {
         expect(this.browser.text('a.navbar-brand')).to.equal('Headline News');
     });
 
+    it('should have a headline element', function () {
+        expect(this.browser.text('h1.headline')).to.exist;
+    });
+
+    it('should have a summary element', function () {
+        expect(this.browser.text('p.summary')).to.exist;
+    });
+
     after(function (done) {
         this.server.close(done);
     });
