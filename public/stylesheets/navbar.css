@@ -1,5 +1,4 @@
 .navbar-default {
-  line-height: 5;
   background-image: none;
   background-color: #fff1e0;
 }
@@ -9,6 +8,8 @@
   padding: 15px;
   width: 100%;
   text-align: center;
+  position: relative;
+  bottom: 40px;
 }
 
 .navbar-brand {
@@ -17,8 +18,24 @@
   font-weight: 700;
   font-size: 50px;
   text-transform: uppercase;
+  position: relative;
+  top: 24px;
 }
 
 .navbar-default .navbar-brand {
   color: #3a3a3a;
+}
+
+.fa-search {
+  font-size: 24px;
+  color: #3a3a3a;
+}
+
+.navbar-collapse {
+  position: relative;
+  top: 26px;
+}
+
+.search-icon {
+  cursor: pointer;
 }
