@@ -1,6 +1,7 @@
 .navbar-default {
   background-image: none;
   background-color: #fff1e0;
+  height: 95px;
 }
 
 .navbar-header {
@@ -19,7 +20,7 @@
   font-size: 50px;
   text-transform: uppercase;
   position: relative;
-  top: 24px;
+  top: 32px;
 }
 
 .navbar-default .navbar-brand {
@@ -29,6 +30,8 @@
 .fa-search {
   font-size: 24px;
   color: #3a3a3a;
+  position: relative;
+  top: 6px;
 }
 
 .navbar-collapse {
