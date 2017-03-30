@@ -34,11 +34,35 @@
   top: 6px;
 }
 
-.navbar-collapse {
+.navbar-left {
   position: relative;
   top: 26px;
 }
 
 .search-icon {
   cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+    .navbar-brand {
+      font-size: 38px;
+      position: relative;
+      top: 20px;
+    }
+
+    .fa-search {
+      margin-left: 25px;
+      position: relative;
+      top: 0px;
+    }
+}
+
+@media screen and (max-width: 644px) {
+    .navbar-brand {
+      font-size: 24px;
+    }
+
+    .fa-search {
+      font-size: 16px;
+    }
 }
