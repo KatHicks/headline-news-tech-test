@@ -32,6 +32,30 @@ describe('index page', function () {
         expect(this.browser.text('p.summary')).to.exist;
     });
 
+    it('should have a search bar', function () {
+        expect(this.browser.text('form.search-box')).to.exist;
+    });
+
+    it('should persist the search term in the url', function (done) {
+        this.browser.fill('search', 'Brexit');
+        this.browser.pressButton('Search');
+        done();
+        expect(this.browser.location.href).to.equal('http://localhost:8000/brexit');
+    });
+
+    it('should change the content after search', function (done) {
+        var initialHeadline;
+        var filteredHeadline;
+
+        initialHeadline = this.browser.text('h1.headline');
+        this.browser.fill('search', 'Brexit');
+        this.browser.pressButton('Search');
+        done();
+        filteredHeadline = this.browser.text('h1.headline');
+
+        expect(initialHeadline).to.not.equal(filteredHeadline);
+    });
+
     after(function (done) {
         this.server.close(done);
     });
