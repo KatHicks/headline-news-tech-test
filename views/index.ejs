@@ -17,9 +17,11 @@
     <link href='/stylesheets/style.css' rel='stylesheet'>
     <link href='/stylesheets/navbar.css' rel='stylesheet'>
     <link href='/stylesheets/headline.css' rel='stylesheet'>
+    <link href='/stylesheets/search.css' rel='stylesheet'>
+
 
     <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,700" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Didact+Gothic" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300" rel="stylesheet">
   </head>
   <body>
     <nav class="navbar navbar-default navbar-fixed-top">
@@ -29,6 +31,8 @@
         </div>
       </div>
     </nav>
+
+    <%- include search.ejs %>
 
     <div class="container">
       <% results.forEach(function(item) { %>
