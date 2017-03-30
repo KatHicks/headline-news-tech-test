@@ -1,0 +1,33 @@
+[
+  {
+    "aspectSet": "article",
+    "modelVersion": "1",
+    "id": "13f344e0-152b-11e7-b0c1-37e417ee6c76",
+    "apiUrl": "http://api.ft.com/content/items/v1/13f344e0-152b-11e7-b0c1-37e417ee6c76",
+    "title": {
+      "title": "Three quick wins for Brexit talks"
+    },
+    "lifecycle": {
+      "initialPublishDateTime": "2017-03-30T10:38:38Z",
+       "lastPublishDateTime": "2017-03-30T10:38:38Z"
+     },
+    "summary": {
+      "excerpt": "We have now seen Theresa May’s Article 50 notification letter and Donald Tusk’s brief and sombre response. Brexit is"
+      }
+    },
+  {
+    "aspectSet": "article",
+    "modelVersion": "1",
+    "id": "0aa6f8d0-14fb-11e7-80f4-13e067d5072c",
+    "apiUrl": "http://api.ft.com/content/items/v1/0aa6f8d0-14fb-11e7-80f4-13e067d5072c",
+    "title": {
+      "title": "Can the Republicans avert a US government shutdown?"
+    },
+    "lifecycle": {
+      "initialPublishDateTime": "2017-03-30T10:31:37Z",
+      "lastPublishDateTime": "2017-03-30T10:31:37Z" },
+    "summary": {
+      "excerpt": "Republicans in Congress are pushing back against a proposal from President Donald Trump to tack funds to pay for a new"
+    }
+  }
+]
