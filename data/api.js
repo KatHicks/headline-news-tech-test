@@ -1,6 +1,6 @@
 'use strict';
 
-var options = function () {
+var options = function (searchTerm = "") {
     var query = {
         method: 'POST',
         url: 'http://api.ft.com/content/search/v1',
@@ -9,7 +9,7 @@ var options = function () {
             'content-type': 'application/json'
         },
         body: {
-            queryString: '',
+            queryString: searchTerm,
             queryContext: {
                 curations: [ 'ARTICLES' ]
             },
