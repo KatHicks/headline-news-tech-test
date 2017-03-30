@@ -1,3 +1,5 @@
+'use strict';
+
 var search = (function () {
     var searchBar   = document.getElementById('search-box');
     var searchIcon  = document.getElementById('search-icon');
@@ -27,5 +29,5 @@ var search = (function () {
 }());
 
 window.onload = function () {
-  search.init();
+    search.init();
 };
