@@ -1,0 +1,24 @@
+.search-box {
+  text-align: center;
+  background-color: #cec6b9;
+  padding: 10px;
+  width: 100vw;
+}
+
+input {
+  border: none;
+  padding: 8px;
+  font-family: 'Roboto', sans-serif;
+  margin: 4px;
+}
+
+.button {
+  background-color: #26747a;
+  color: #fff;
+  font-family: 'Roboto', sans-serif;
+  border: none;
+}
+
+.search {
+  width: 480px;
+}
