@@ -40,4 +40,4 @@ We were given four days to work on this tech test with the following instruction
 
 Note that you will need to have Node installed first. You can install this following the instructions [here](https://nodejs.org/en/)
 
-**Note that tests were all passing and should still pass but introducing the pagination logic slowed down the application so the tests are now timing out.**
+**Note that tests may timeout and fail on low-speed internet connections.**
