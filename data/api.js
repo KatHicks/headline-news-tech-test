@@ -1,6 +1,6 @@
 'use strict';
 
-var options = function (searchTerm = "") {
+var options = function (paginationPosition, searchTerm = '') {
     var query = {
         method: 'POST',
         url: 'http://api.ft.com/content/search/v1',
@@ -14,6 +14,8 @@ var options = function (searchTerm = "") {
                 curations: [ 'ARTICLES' ]
             },
             resultContext: {
+                maxResults : '20',
+                offset : paginationPosition,
                 aspects: [ 'title', 'summary', 'lifecycle' ]
             }
         },
