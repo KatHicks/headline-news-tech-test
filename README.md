@@ -29,7 +29,7 @@ We were given four days to work on this tech test with the following instruction
 
 ### Using my app
 
-* You can view the app online at [headline-news.herokuapp.com/](https://headline-news.herokuapp.com/)
+* You can view the app online at [headline-news.herokuapp.com](https://headline-news.herokuapp.com/)
 
 ### Running the tests
 
