@@ -17,6 +17,7 @@ describe('index page', function () {
     });
 
     beforeEach(function (done) {
+        this.timeout(8000);
         this.browser.visit('/', done);
     });
 
@@ -24,21 +25,25 @@ describe('index page', function () {
         expect(this.browser.text('a.navbar-brand')).to.equal('Headline News');
     });
 
-    it('should have a headline element', function () {
+    it('should have a headline element', function (done) {
+        done();
         expect(this.browser.text('h1.headline')).to.exist;
     });
 
-    it('should have a summary element', function () {
+    it('should have a summary element', function (done) {
+        done();
         expect(this.browser.text('p.summary')).to.exist;
     });
 
-    it('should have a search bar', function () {
+    it('should have a search bar', function (done) {
+        done();
         expect(this.browser.text('form.search-box')).to.exist;
     });
 
     it('should persist the search term in the url', function (done) {
         this.browser.fill('search', 'Brexit');
         this.browser.pressButton('Search');
+        this.browser.wait();
         done();
         expect(this.browser.location.href).to.equal('http://localhost:8000/brexit');
     });
@@ -50,6 +55,7 @@ describe('index page', function () {
         initialHeadline = this.browser.text('h1.headline');
         this.browser.fill('search', 'Brexit');
         this.browser.pressButton('Search');
+        this.browser.wait();
         done();
         filteredHeadline = this.browser.text('h1.headline');
 
@@ -58,7 +64,19 @@ describe('index page', function () {
 
     it('should not include the email sign up text in summaries', function () {
         expect(this.browser.text('p.summary')).to.not.contain('Sign up to receive FirstFT by email here');
-    })
+    });
+
+    it('should have results header at top of page', function () {
+        expect(this.browser.text('h3')).to.contain('Results');
+    });
+
+    it('should have a left button at the bottom of the page', function () {
+        expect(this.browser.text('i.fa-chevron-left')).to.exist;
+    });
+
+    it('should have a right button at the bottom of the page', function () {
+        expect(this.browser.text('i.fa-chevron-right')).to.exist;
+    });
 
     after(function (done) {
         this.server.close(done);
