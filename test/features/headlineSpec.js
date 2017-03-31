@@ -56,6 +56,10 @@ describe('index page', function () {
         expect(initialHeadline).to.not.equal(filteredHeadline);
     });
 
+    it('should not include the email sign up text in summaries', function () {
+        expect(this.browser.text('p.summary')).to.not.contain('Sign up to receive FirstFT by email here');
+    })
+
     after(function (done) {
         this.server.close(done);
     });
