@@ -1,0 +1,30 @@
+#page0 {
+  display: block;
+}
+
+#page1 {
+  display: none;
+}
+
+#page2 {
+  display: none;
+}
+
+#page3 {
+  display: none;
+}
+
+#page4 {
+  display: none;
+}
+
+.pagination-bar {
+  text-align: center;
+  margin: 20px;
+}
+
+.fa-chevron-left,
+.fa-chevron-right {
+  padding: 5px;
+  cursor: pointer;
+}
