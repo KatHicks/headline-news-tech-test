@@ -7,7 +7,7 @@ var options     = require("../../data/api.js");
 var nock        = require('nock');
 var apiResponse = require('../assets/response.json');
 
-describe('headline api request', function () {
+describe('api request', function () {
     beforeEach(function () {
       nock('http://api.ft.com/')
         .post('/content/search/v1')
