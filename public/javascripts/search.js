@@ -27,7 +27,3 @@ var search = (function () {
         init: init
     };
 }());
-
-window.onload = function () {
-    search.init();
-};
