@@ -4,6 +4,9 @@
   "version": "0.0.0",
   "author": "Kat Hicks",
   "private": true,
+  "engines": {
+    "node": "8.9.4"
+  },
   "scripts": {
     "start": "node ./bin/server.js",
     "test": "nyc mocha",
